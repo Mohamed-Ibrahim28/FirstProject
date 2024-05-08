@@ -484,7 +484,7 @@ body {
 .about-section .about .about-h2 {
   font-size:50px;
   padding-top: 60px;
-  color: #eee;
+  color: black;
 }
 .about-section .about .about-h2 span {
   font-weight: normal;
@@ -492,7 +492,7 @@ body {
 
 .about-section .about .about-h4 {
   font-size: 30px;
-  color: #cc2127;
+  color: rgb(0, 138, 192);
   font-weight: bolder;
 }
 .about-section .about .about-p {
