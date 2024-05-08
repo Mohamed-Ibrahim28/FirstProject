@@ -1,0 +1,666 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: lucida sans;
+  height: 1600px;
+}
+/* 
+---------------------------------------navbar--------------------------------------------
+*/
+.container {
+  width: 85%;
+  margin: auto;
+}
+.navbar {
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #222;
+}
+.nav-logo {
+  width: 50%;
+  float: left;
+}
+.nave-ul {
+  float: left;
+  width: 50%;
+  list-style: none;
+}
+.nav-logo .logo-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+.nave-ul .nav-list {
+  display: inline-block;
+}
+.navbar .nave-ul .nav-list a {
+  display: block;
+  padding: 10px 15px;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nave-ul .nav-list a:hover {
+  border-radius: 13px;
+  color: rgb(0, 138, 192);
+}
+.navbar input,
+.navbar label {
+  position: absolute;
+}
+.navbar input {
+  display: none;
+}
+.navbar label {
+  display: block;
+  top: 10px;
+  right: 15px;
+  padding: 25px;
+  background-image: url("../images/Navbar/open.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.navbar input:checked ~ .nave-ul {
+  display: block;
+}
+.navbar input:checked ~ label {
+  background-image: url("../images/Navbar/close.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+-------------------------------------media navbar--------------------------------------------
+*/
+@media (min-width: 992px) {
+  .navbar label {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-logo {
+    width: 100%;
+    float: none;
+  }
+  .nave-ul {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+  }
+  .nave-ul .nav-list {
+    display: block;
+    text-align: center;
+  }
+  .nave-ul .nav-list a:hover {
+    border-radius: 13px;
+    color: rgb(0, 138, 192);
+    border-bottom: solid 1px rgb(0, 138, 192);
+  }
+}
+
+/* 
+-------------------------------------./media navbar--------------------------------------------
+*/
+/* 
+-------------------------------------./navbar--------------------------------------------
+*/
+
+/* 
+-------------------------------------home section--------------------------------------------
+*/
+.home {
+  background: url(../images/Home/home-bg.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+}
+.home-info {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.home-info .home-h2 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #5e5e5e;
+  margin-bottom: 20px;
+}
+.home-info .home-h4 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(0, 138, 192);
+}
+.home-info .home-p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 20px;
+}
+.home-info .home-p .ux {
+  color: #111;
+  font-weight: bold;
+}
+.home-info .home-button {
+  padding: 15px;
+  border: none;
+  width: 150px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(0, 138, 192);
+  cursor: pointer;
+  font-weight: bold;
+}
+.home-info .home-button:hover {
+  color: rgb(0, 138, 192);
+  background-color: #fff;
+}
+
+/* 
+-------------------------------------media home sectoin--------------------------------------------
+*/
+@media (max-width: 768px) {
+  .home-info .home-h2 {
+    font-size: 30px;
+    color: rgb(0, 138, 192);
+  }
+  .home-info .home-h4 {
+    font-size: 20px;
+    color: #444;
+  }
+  .home-info .home-p {
+    font-size: 15px;
+  }
+  .home-info .home-button {
+    padding: 10px;
+    width: 110px;
+    font-size: 14px;
+  }
+}
+/* 
+-------------------------------------./media home section--------------------------------------------
+*/
+/* 
+-------------------------------------./home section--------------------------------------------
+*/
+
+/* 
+-------------------------------------my work--------------------------------------------
+*/
+.work {
+  height: auto;
+  padding: 50px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+.work .work-h2 {
+  font-size: 60px;
+}
+.work .work-span {
+  font-weight: normal;
+}
+.work .part {
+  width: 30%;
+  margin-top: 20px;
+  float: left;
+  height: auto;
+  padding: 100px 0;
+  border: solid 1px #888;
+  text-align: center;
+  margin-left: 5%;
+  box-sizing: border-box;
+}
+.work .part1 {
+  margin-left: 0;
+}
+.work .icon {
+  color: #888;
+  margin-bottom: 20px;
+}
+.work .work-h4 {
+  color: rgb(0, 138, 192);
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.work .part .line {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.work .part .work-p {
+  color: #888;
+  padding: 20px;
+  font-size: 14px;
+}
+/* 
+-------------------------------------media My Work--------------------------------------------
+*/
+@media (max-width: 768px) {
+  .work .part {
+    width: 47%;
+  }
+  .work .part3 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .work .part {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+}
+/* 
+-------------------------------------./media My Work--------------------------------------------
+*/
+/* 
+-------------------------------------./My Work sectsion--------------------------------------------
+*/
+/* 
+-------------------------------------portfolio sectsion--------------------------------------------
+*/
+.portfolio {
+  background-color: #f8f8f8;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.portfolio .port-h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.portfolio .port-h2 span {
+  font-weight: normal;
+}
+.portfolio .port-ul {
+  text-align: center;
+  list-style: none;
+  margin: 20px 0;
+}
+.portfolio .port-ul li {
+  display: inline-block;
+  width: 100px;
+}
+.portfolio .port-ul .port-li-1 {
+  background-color: rgb(0, 138, 192);
+  color: #fff;
+}
+.portfolio .port-ul li {
+  font-size: 20px;
+}
+.portfolio .port-ul .li {
+  padding-left: 20px;
+}
+.portfolio .box div {
+  width: 25%;
+  float: left;
+  font-size: 0;
+  position: relative;
+}
+
+.portfolio .box div img {
+  width: 100%;
+}
+.portfolio .box div .over {
+  font-size: 10px;
+  background-color: rgb(0, 138, 192, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.portfolio .box div .over span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid rgb(0, 138, 192);
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px 20px;
+}
+.portfolio .box div .over:hover {
+  opacity: 1;
+}
+/* 
+-------------------------------------media portfolio--------------------------------------------
+*/
+@media (max-width: 575px) {
+  .portfolio .box div {
+    width: 100%;
+  }
+  .portfolio .port-ul li {
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 575px) and (max-width: 768px) {
+  .portfolio .box div {
+    width: 50%;
+  }
+}
+/* 
+-------------------------------------./media portfolio---------------------------------------------
+*/
+/* 
+-------------------------------------./portfolio section-------------------------------------------
+*/
+/* 
+---------------------------------------profile section--------------------------------------------- 
+*/
+
+.profile-skills {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.profile-skills .profile ul li span {
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.profile-skills .profile {
+  width: 50%;
+  float: left;
+}
+.profile-skills .profile ul li .span-web {
+  color: rgb(0, 138, 192);
+}
+
+.profile-skills .skills {
+  width: 50%;
+  float: left;
+}
+
+.profile-skills .profile-h2,
+.profile-skills .skills-h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.profile-skills .profile-h2 span,
+.profile-skills .skills-h2 span {
+  font-weight: normal;
+}
+.profile-skills .skills-p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.profile-skills .skills .bar {
+  overflow: hidden;
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.profile-skills .skills .bar .span1 {
+  float: left;
+  width: 50%;
+}
+
+.profile-skills .skills .bar .span2 {
+  float: right;
+  position: relative;
+  right: 100px;
+}
+.profile-skills .skills .bar .parent {
+  height: 5px;
+  background-color: #ccc;
+  clear: both;
+}
+.profile-skills .skills .bar .parent .span-parent {
+  background-color: rgb(0, 138, 192);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.profile-skills .skills .bar .parent .span1 {
+  width: 55%;
+}
+.profile-skills .skills .bar .parent .span2 {
+  width: 25%;
+}
+.profile-skills .skills .bar .parent .span3 {
+  width: 20%;
+}
+/* 
+---------------------------------------media profile section--------------------------------------------- 
+*/
+@media (max-width: 680px) {
+  .profile-skills .skills {
+    width: 100%;
+  }
+  .profile-skills .profile {
+    width: 100%;
+  }
+  .profile-skills .profile-h2,
+  .skills-h2 {
+    text-align: center;
+  }
+  .profile-skills .profile ul {
+    margin-bottom: 20px;
+  }
+}
+/* 
+---------------------------------------./media profile section--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------./profile section---------------------------------------------------
+*/
+/* 
+---------------------------------------about section------------------------------------------------------- 
+*/
+.about-section {
+  height: 300px;
+  background-image: url("/myProject/images/creative/about-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.about-section .about {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+.about-section .about .about-h2 {
+  font-size: 40px;
+  padding-top: 60px;
+}
+.about-section .about .about-h2 span {
+  font-weight: normal;
+}
+
+.about-section .about .about-h4 {
+  font-size: 30px;
+  color: rgb(0, 138, 192);
+}
+.about-section .about .about-p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 20px 0;
+  color: #444;
+}
+/* 
+----------------------------------------media about section-------------------------------------------------------
+*/
+@media (max-width: 991px) {
+  .about-section {
+    height: auto;
+  }
+  .about-section .about {
+    width: 100%;
+    float: none;
+  }
+  .about-section .about .about-h2 {
+    padding-top: 30px;
+  }
+  .about-section .about .about-p {
+    color: black;
+  }
+}
+/* 
+---------------------------------------./media about section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------./about section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------social section------------------------------------------------------- 
+*/
+.social {
+  height: auto;
+  overflow: hidden;
+}
+.social .parent {
+  width: 33.33%;
+  float: left;
+  box-sizing: border-box;
+  padding: 100px 0 100px 60px;
+  color: #fff;
+}
+.social .facebook {
+  background-color: #3b5998;
+}
+.social .twitter {
+  background-color: #498cbf;
+}
+.social .pinterest {
+  background-color: #cc2127;
+}
+.social i {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  margin-right: 10px;
+  color: #888;
+  font-size: 20px;
+}
+.social .parent p {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.social .parent span {
+  display: block;
+  margin-bottom: 8px;
+}
+.social .parent .span {
+  font-weight: normal;
+}
+/* 
+---------------------------------------media social section------------------------------------------------------- 
+*/
+@media (max-width: 991px) {
+  .social .parent {
+    width: 100%;
+    float: none;
+  }
+}
+/* 
+---------------------------------------./media social section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------./social section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------drop section------------------------------------------------------- 
+*/
+.drop {
+  padding: 50px 0;
+  text-align: center;
+}
+.drop h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.drop h2 span {
+  font-weight: normal;
+}
+.drop form {
+  width: 70%;
+  margin: auto;
+}
+.drop form input {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 5px;
+  outline: 0;
+}
+.drop form .text1 {
+  width: 49%;
+  float: left;
+}
+.drop form .text2 {
+  width: 49%;
+  float: right;
+}
+.drop form .sub {
+  width: 100%;
+}
+.drop textarea{
+  width: 100%;
+  background-color: #ccc;
+  outline: 0;
+}
+.drop input[type="submit"]{
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #888;
+  cursor: pointer;
+  color: #888;
+}
+/* 
+---------------------------------------media drop section------------------------------------------------------- 
+*/
+@media(max-width:575px){
+  .drop form .text{
+    width: 100%;
+    float: none;
+  }
+  .drop form{
+    width: 90%;
+  }
+  .drop h2{
+    font-size: 40px;
+  }
+}
+
+/* 
+---------------------------------------./media drop section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------./drop section------------------------------------------------------- 
+*/
+/* 
+---------------------------------------.footer section------------------------------------------------------- 
+*/
+.footer {
+text-align: center;
+color: #888;
+padding: 10px 0;
+}
+/* 
+---------------------------------------./footer section------------------------------------------------------- 
+*/
